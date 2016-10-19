@@ -8,6 +8,7 @@ function getUserLocation() {
   }
 }
 
+// Helper functions
 function _success(position) {
   var latitude, longitude, latlng, mapOptions, map, mapElement, infoWindow, marker;
 
@@ -57,15 +58,15 @@ function _success(position) {
   google.maps.event.addDomListener(window, 'load', _success);
 }
 
-// helper functions
-function _toggleInfoWindow() {
-  console.warn('Marcador clicado: ', this);
-}
-
 function _error(error) {
   console.error(error);
 }
 
+function _toggleInfoWindow() {
+  console.warn('Marcador clicado: ', this);
+}
+
+// Events
 window.addEventListener('load', function(event) {
   getUserLocation();
 });
