@@ -1,4 +1,4 @@
-// Geocoding
+// Hello World
 
 function getUserLocation() {
   if (navigator.geolocation) {
@@ -7,6 +7,8 @@ function getUserLocation() {
     console.error('Seu navegador não suporta Geolocation!');
   }
 }
+
+// ====
 
 // Helper functions
 function _success(position) {
@@ -52,7 +54,7 @@ function _success(position) {
   infoWindow.setContent('Você está aqui!');
 
   // adiciona evento para o marcador
-  marker.addListener('click', _toggleInfoWindow);
+  marker.addListener('click', _markerClicked);
 
   // exibe o mapa
   google.maps.event.addDomListener(window, 'load', _success);
@@ -62,9 +64,11 @@ function _error(error) {
   console.error(error);
 }
 
-function _toggleInfoWindow() {
+function _markerClicked() {
   console.warn('Marcador clicado: ', this);
 }
+
+// ====
 
 // Events
 window.addEventListener('load', function(event) {
