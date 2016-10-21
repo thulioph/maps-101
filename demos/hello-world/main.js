@@ -55,9 +55,6 @@ function _success(position) {
 
   // adiciona evento para o marcador
   marker.addListener('click', _markerClicked);
-
-  // exibe o mapa
-  google.maps.event.addDomListener(window, 'load', _success);
 }
 
 function _error(error) {
