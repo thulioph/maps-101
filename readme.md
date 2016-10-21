@@ -8,10 +8,11 @@ Para realizar os testes de requisição iremos utilizar o [Postman](https://www.
 A primeira coisa que você precisa fazer antes de iniciar um projeto com Maps, é criar um novo projeto no [Console de APIs](https://console.developers.google.com/?hl=pt-br) para se obter as chaves necessárias. Existem dois tipos diferentes: **server key** e **browser key**. Como o próprio nome ja diz, uma é utilizada do lado do navegador e a outra do lado do servidor, porém ambas possuem o mesmo objetivo que são gerar métricas a respeito da utilização da API e monitorar o uso.
 
 ## Hello World
-- exibir um mapa
-- exibir a localização do usuário
-- exibir um marcador personalizado
-- adicionar evento de click no marcador
+Este exemplo contém um mapa exibindo a localização do usuário com um marcador personalizado.
+
+**links**
+- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/hello-world)
+
 
 ## Geocoding
 Utilizado para converter endereços em coordenadas, ou coordenadas em endereço.
@@ -70,7 +71,7 @@ https://maps.googleapis.com/maps/api/distancematrix/json?origins=ORIGEM|ORIGEM&d
 **links**
 - [testar no postman](https://documenter.getpostman.com/collection/view/64448-61788af1-12e5-89d3-16f9-94fedfe4b33b#Distance-Matrix)
 - [documentação](https://developers.google.com/maps/documentation/javascript/distancematrix?hl=pt-BR)
-- [exemplo](https://github.com/thulioph/distance-direction/)
+- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/distance-matrix)
 
 ## Directions
 Utilizado para obter informações sobre uma determinada rota ou direção.
@@ -95,7 +96,7 @@ https://maps.googleapis.com/maps/api/directions/json?origin=ORIGEM&destination=D
 **links**
 - [testar no postman](https://documenter.getpostman.com/collection/view/64448-61788af1-12e5-89d3-16f9-94fedfe4b33b#Directions)
 - [documentação](https://developers.google.com/maps/documentation/javascript/directions)
-- [exemplo](https://github.com/thulioph/distance-direction/)
+- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/directions)
 
 ## Street View Service
 Utilizado na exibição de visualizações panorâmicas em 360º.
@@ -141,7 +142,7 @@ map.setStreetView(streetView);
 
 **links**
 - [documentação](https://developers.google.com/maps/documentation/javascript/examples/streetview-simple)
-- [exemplo](https://github.com/thulioph/street-panorama)
+- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/street-view)
 
 ## Street View Image API
 Utilizado para se obter uma imagem estática da visualização em street view de uma determinada localização.
@@ -168,7 +169,23 @@ https://maps.googleapis.com/maps/api/streetview?size=LARGURAxALTURA&location=LAT
 **links**
 - [testar no postman](https://documenter.getpostman.com/collection/view/64448-61788af1-12e5-89d3-16f9-94fedfe4b33b#Street-View-Images-API)
 - [documentação](https://developers.google.com/maps/documentation/streetview/intro)
-- [exemplo](https://github.com/thulioph/street-panorama)
+- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/street-view)
+
+## Drawing
+Utilizado para realizar desenhos de polígonos no mapa.
+
+**o que você precisa fornecer**
+- url da biblioteca
+- uma chave de acesso
+
+**casos de uso**
+- busca personalizada por região
+- desenhar qualquer coisa com polígonos no mapa
+
+**links**
+- [documentação](https://developers.google.com/maps/documentation/javascript/drawinglayer?hl=pt-br)
+- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/drawing)
+
 
 ## Roads API
 Possibilita você mapear
@@ -179,3 +196,4 @@ Possibilita você mapear
 - https://developer.mozilla.org/pt-BR/docs/Using_geolocation
 - http://tableless.com.br/api-google-maps-v3/
 - http://codepen.io/collection/DadGxx/
+- https://developers.google.com/maps/documentation/javascript/libraries?hl=pt-br
