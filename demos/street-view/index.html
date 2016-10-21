@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Maps 101 - Street View</title>
+
+  <meta name="application-name" content="Maps 101 - Street View">
+
+  <style>
+    body {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+    }
+
+    .map-container {
+      position: relative;
+    }
+
+    .map {
+      width: 100%;
+      height: 300px;
+      background-color: black;
+    }
+
+    .map.half {
+      width: 49%;
+      display: inline-block;
+    }
+
+    .image-area {
+      min-width: 250px;
+      min-height: 250px;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Street View Service -->
+  <section class="map-container">
+    <h2>Street View</h2>
+
+    <aside id="map" class="map half"></aside>
+    <aside id="street-view" class="map half"></aside>
+  </section>
+
+  <!-- Image API -->
+  <section class="map-container">
+    <h2>Street View - Image API</h2>
+
+    <form id="form-image">
+      <fieldset>
+        <legend>Tamanho</legend>
+
+        <label for="range-width">largura</label>
+        <input type="range" min="100" max="800" step="10" id="range-width">
+
+        <label for="range-height">altura</label>
+        <input type="range" min="100" max="800" step="10" id="range-height">
+      </fieldset>
+
+      <fieldset>
+        <legend>Heading</legend>
+
+        <label for="heading">rotação horizontal</label>
+        <input type="range" min="100" max="800" step="10" id="heading">
+      </fieldset>
+
+      <fieldset>
+        <legend>Pitch</legend>
+
+        <label for="pitch">rotação vertical</label>
+        <input type="range" min="100" max="800" step="10" id="pitch">
+      </fieldset>
+
+      <fieldset>
+        <legend>Fov</legend>
+
+        <label for="fov">nível de zoom</label>
+        <input type="range" min="100" max="800" step="10" id="fov">
+      </fieldset>
+
+      <fieldset>
+        <button type="submit">gerar imagem</button>
+      </fieldset>
+    </form>
+
+    <figure class="image-area">
+      <img id="image-maps" src="" alt="">
+    </figure>
+  </section>
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="main.js"></script>
+  <script src="main-image.js"></script>
+</body>
+</html>
