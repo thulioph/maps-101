@@ -25,6 +25,7 @@ function _submitForm(event) {
   destination = document.getElementById('destination').value;
 
   // adiciona ao form_obj os valores dos inputs
+  // origem e destino precisam ser arrays
   form_obj.origin = [origin];
   form_obj.destination = [destination];
 
