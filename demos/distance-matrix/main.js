@@ -70,7 +70,13 @@ function _makeRequest(obj) {
 }
 
 function _displayData(obj) {
-  console.info(obj);
+  var distance, duration;
+
+  distance = document.getElementById('distance');
+  duration = document.getElementById('duration');
+
+  distance.innerHTML = obj.distance.text;
+  duration.innerHTML = obj.duration.text;
 }
 
 // ====
