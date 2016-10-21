@@ -186,9 +186,26 @@ Utilizado para realizar desenhos de polígonos no mapa.
 - [documentação](https://developers.google.com/maps/documentation/javascript/drawinglayer?hl=pt-br)
 - [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/drawing)
 
-
 ## Roads API
-Possibilita você mapear
+Possibilita mapear coordenadas GPS e determinar o limite de velocidade.
+
+**serviços**
+
+#### snap to road
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis ratione numquam, sunt distinctio tenetur nostrum est, veniam vel sapiente, ex repellat labore nesciunt at! Porro exercitationem optio sunt magnam?
+
+#### limites de velocidade
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis ratione numquam, sunt distinctio tenetur nostrum est, veniam vel sapiente, ex repellat labore nesciunt at! Porro exercitationem optio sunt magnam?
+
+**o que você precisa fornecer**
+- lorem
+
+**casos de uso**
+- lorem
+
+**links**
+- [documentação](https://developers.google.com/maps/documentation/roads/intro?hl=pt-br)
+- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/roads)
 
 ## Links úteis
 - https://developers.google.com/maps/documentation/javascript/marker-clustering#markerclusterer
@@ -197,3 +214,4 @@ Possibilita você mapear
 - http://tableless.com.br/api-google-maps-v3/
 - http://codepen.io/collection/DadGxx/
 - https://developers.google.com/maps/documentation/javascript/libraries?hl=pt-br
+- https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform?hl=pt-br
