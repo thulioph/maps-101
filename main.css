@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  height: auto;
   position: relative;
 }
 
@@ -7,7 +7,7 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: auto;
 }
 
 header {
@@ -108,6 +108,16 @@ li a:before {
 .icon-street:before {
   content: '';
   background-image: url('demos/street-view/img/icon.svg');
+}
+
+.icon-roads:before {
+  content: '';
+  background-image: url('demos/roads/img/icon.svg');
+}
+
+.icon-drawing:before {
+  content: '';
+  background-image: url('demos/drawing/img/icon.svg');
 }
 
 footer {
