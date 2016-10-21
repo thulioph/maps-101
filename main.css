@@ -1,0 +1,138 @@
+html {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  min-height: 150px;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+  padding-top: 50px;
+  background: #DCF2EE;
+}
+
+h1 {
+  margin: 0;
+  color: #7CA2A6;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #7CA2A6;
+}
+
+main {
+  position: relative;
+  min-height: 360px;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main:hover li {
+  opacity: .4;
+}
+
+main:hover li:hover {
+  opacity: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  display: inline-block;
+  margin: 2em 2.5em;
+  text-align: left;
+  background-color: rgb(245, 245, 245);
+
+  -webkit-transition: opacity, .8s;
+  -o-transition: opacity, .8s;
+  transition: opacity, .8s;
+}
+
+li a {
+  color: #767676;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 100px;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+li a:before {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.icon-directions:before {
+  content: '';
+  background-image: url('demos/directions/img/icon.svg');
+}
+
+.icon-distance:before {
+  content: '';
+  background-image: url('demos/distance-matrix/img/icon.svg');
+}
+
+.icon-geocoding:before {
+  content: '';
+  background-image: url('demos/geocoding/img/icon.svg');
+}
+
+.icon-street:before {
+  content: '';
+  background-image: url('demos/street-view/img/icon.svg');
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-link {
+  width: 300px;
+  height: 40px;
+  background-color: #7CA2A6;
+  color: #ffffff;
+  border: 1px solid #e5e5e5;
+  text-decoration: none;
+  text-align: center;
+  border-radius: .25em;
+  padding: .65em 1.25em;
+
+  -webkit-transition: all, .2s, linear;
+  -o-transition: all, .2s, linear;
+  transition: all, .2s, linear;
+}
+
+.btn-link:hover {
+  background-color: #ffffff;
+  color: #7CA2A6;
+}
