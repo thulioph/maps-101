@@ -192,20 +192,16 @@ Possibilita mapear coordenadas GPS e determinar o limite de velocidade.
 **serviços**
 
 #### snap to road
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis ratione numquam, sunt distinctio tenetur nostrum est, veniam vel sapiente, ex repellat labore nesciunt at! Porro exercitationem optio sunt magnam?
 
 #### limites de velocidade
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis ratione numquam, sunt distinctio tenetur nostrum est, veniam vel sapiente, ex repellat labore nesciunt at! Porro exercitationem optio sunt magnam?
-
-**o que você precisa fornecer**
-- lorem
 
 **casos de uso**
-- lorem
+- mapeamento de coordenadas
+- criar uma navegação personalizada
+- obter dados do limite de velocidade da via ou do veículo
 
 **links**
 - [documentação](https://developers.google.com/maps/documentation/roads/intro?hl=pt-br)
-- [exemplo](https://github.com/thulioph/maps-101/tree/master/demos/roads)
 
 ## Links úteis
 - https://developers.google.com/maps/documentation/javascript/marker-clustering#markerclusterer
@@ -213,5 +209,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis ra
 - https://developer.mozilla.org/pt-BR/docs/Using_geolocation
 - http://tableless.com.br/api-google-maps-v3/
 - http://codepen.io/collection/DadGxx/
+- http://speakerdeck.com/thulioph
 - https://developers.google.com/maps/documentation/javascript/libraries?hl=pt-br
 - https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform?hl=pt-br
